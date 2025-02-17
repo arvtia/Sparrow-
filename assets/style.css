@@ -1,0 +1,166 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.main{
+
+}
+
+.fancy-navbra{
+display: flex;
+flex-direction: row-reverse;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+
+}
+.fancy-navbra .fancy-cupid{
+    width: 60px;
+    background-color: antiquewhite;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fluffy-icon3 h4{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.fancy-cupid img{
+    padding: 5px;
+    height: 50px;
+}
+.fancy-icons{
+    width: 400px;
+    width: 100vh;
+}
+
+/*--fancy -navbar -side bar css ends here*/
+
+/*the side nav list items css starts here*/
+
+.fluffy-icons-list{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    overflow: scroll;
+    height: 100vh;
+    list-style: none;
+}
+.fluffy-icons-list a{
+    text-decoration: none;
+}
+.fluffy-icons-list li{
+    font-size: 2.369rem
+}
+.first-drop-down li{
+    font-size: 1rem;  
+}
+.first-drop-down{
+    margin: 0;
+    padding-top: 10px;
+    list-style: none;
+    height: 30vh;
+    width: 300px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.first-drop-down a{
+    text-decoration: none;
+    color:black;
+    opacity: 0.5;
+}
+.dd-2 li{
+    font-size: 1rem;   
+}
+.dd-2{
+    margin: 0;
+    padding-top: 10px;
+    list-style: none;
+    height: 31vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.dd-2 a{
+    color: black;
+    opacity: 0.5;
+}
+.first-drop-down a{
+    text-decoration: none;
+    color:black;
+    opacity: 0.5;
+}
+.dd-3 li{
+    font-size: 1rem; 
+}
+.dd-3 li{
+    font-size: 1rem;   
+}
+.dd-3 a{
+    color: black;
+    opacity: 0.5;
+}
+.dd-3{
+    margin: 0;
+    padding-top: 10px;
+    list-style: none;
+    height: 31vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.fluffy-icons-list a{
+    color: black;
+}
+.fluffy-icons-list span{
+    align-items: center;
+}
+.dd-4 li{
+    font-size: 1rem;   
+}
+.dd-4 {
+    margin: 0;
+    padding-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    
+}
+.dd-4 a{
+    color: black;
+    opacity: 0.5;
+    
+}
+
+
+
+/*hover effects css part side bar*/
+.dd-2 a:hover{
+    color: black;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+.first-drop-down a:hover{
+    color: black;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+.dd-3 a:hover{
+    color: black;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+.dd-4 a:hover{
+    color: black;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
