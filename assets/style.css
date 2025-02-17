@@ -12,16 +12,19 @@ flex-direction: row-reverse;
     position: fixed;
     right: 0;
     height: 100vh;
+    
 
 }
 .fancy-navbra .fancy-cupid{
     width: 60px;
-    background-color: antiquewhite;
+    background-color: white;
     position: absolute;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 3;
 }
 .fluffy-icon3 h4{
     margin: 0;
@@ -34,8 +37,14 @@ flex-direction: row-reverse;
     height: 50px;
 }
 .fancy-icons{
-    width: 400px;
-    width: 100vh;
+    right: -55vw;
+    width: 55vw;
+    background-color: antiquewhite;
+    position: relative;
+    transition: right 0.5s ease-in-out;
+}
+.fancy-icons.active{
+    right: 0;
 }
 
 /*--fancy -navbar -side bar css ends here*/
@@ -45,10 +54,11 @@ flex-direction: row-reverse;
 .fluffy-icons-list{
     width: 100%;
     display: grid;
-    justify-content: center;
+    justify-content: start;
     overflow: scroll;
     height: 100vh;
     list-style: none;
+    margin-left: 7vw;
 }
 .fluffy-icons-list a{
     text-decoration: none;
@@ -73,6 +83,7 @@ flex-direction: row-reverse;
     text-decoration: none;
     color:black;
     opacity: 0.5;
+    padding: 4px;
 }
 .dd-2 li{
     font-size: 1rem;   
