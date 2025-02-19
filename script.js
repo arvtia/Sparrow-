@@ -35,5 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const fourthDd = document.querySelector('.fourth_dd');
+    const dropdown4 = document.querySelector('.dd-4');
 
+    fourthDd.addEventListener("click", () => {
+        dropdown4.classList.toggle('active');
+    })
+})
 
