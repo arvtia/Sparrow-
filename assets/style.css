@@ -39,33 +39,38 @@ flex-direction: row-reverse;
 .fancy-icons{
     right: -55vw;
     width: 55vw;
-    background-color: antiquewhite;
+    background-color: #ffffff80;
     position: relative;
     transition: right 0.5s ease-in-out;
 }
 .fancy-icons.active{
     right: 0;
 }
-
 /*--fancy -navbar -side bar css ends here*/
+
 
 /*the side nav list items css starts here*/
 
 .fluffy-icons-list{
     width: 100%;
-    display: grid;
-    justify-content: start;
     overflow: scroll;
     height: 100vh;
     list-style: none;
     margin-left: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
 }
 .fluffy-icons-list a{
     text-decoration: none;
 }
 .fluffy-icons-list li{
-    font-size: 2.369rem
+    font-size: 2.369rem;
+    position: relative;
+    padding: 2px;
 }
+
 .first-drop-down li{
     font-size: 1rem;  
 }
@@ -73,17 +78,17 @@ flex-direction: row-reverse;
     margin: 0;
     padding-top: 10px;
     list-style: none;
-    height: 30vh;
+    min-height: 27vh;
     width: 300px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 300px;
+    display: none;
+
 }
 .first-drop-down a{
     text-decoration: none;
     color:black;
     opacity: 0.5;
     padding: 4px;
+
 }
 .dd-2 li{
     font-size: 1rem;   
@@ -92,12 +97,113 @@ flex-direction: row-reverse;
     margin: 0;
     padding-top: 10px;
     list-style: none;
-    height: 31vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    height: 20vh;
     width: 300px;
+    display: none;
 }
+
+#first_id-dd{
+    display:inline-block;
+    position: relative;
+    width: 80%;
+
+}
+
+/*underline - effet---*/
+#first_id-dd::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with zero width */
+    height: 2px; /* Thickness of the underline */
+    background-color: currentColor; /* Match text color */
+    transition: width 0.3s ease-in-out; /* Smooth expansion */
+}
+#first_id-dd:hover::before {
+    width: 100%; /* Expands fully */
+}
+
+#second_id-dd::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with zero width */
+    height: 2px; /* Thickness of the underline */
+    background-color: currentColor; /* Match text color */
+    transition: width 0.3s ease-in-out; /* Smooth expansion */
+}
+#second_id-dd:hover::before {
+    width: 100%; /* Expands fully */
+}
+
+#second_id-dd{
+    display:inline-block;
+    position: relative;
+    width: 80%;
+}
+
+#third_id-dd{
+    display:inline-block;
+    position: relative;
+    width: 80%;
+}
+
+#third_id-dd::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with zero width */
+    height: 2px; /* Thickness of the underline */
+    background-color: currentColor; /* Match text color */
+    transition: width 0.3s ease-in-out; /* Smooth expansion */
+}
+#third_id-dd:hover::before {
+    width: 100%; /* Expands fully */
+}
+#fourth_id-dd{
+    display:inline-block;
+    position: relative;
+    width: 80%;
+}
+#fourth_id-dd::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with zero width */
+    height: 2px; /* Thickness of the underline */
+    background-color: currentColor; /* Match text color */
+    transition: width 0.3s ease-in-out; /* Smooth expansion */
+}
+#fourth_id-dd:hover::before {
+    width: 100%; /* Expands fully */
+}
+.second-last{
+    display:inline-block;
+    position: relative;
+    width: 80%;
+}
+.second-last::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with zero width */
+    height: 2px; /* Thickness of the underline */
+    background-color: currentColor; /* Match text color */
+    transition: width 0.3s ease-in-out; /* Smooth expansion */
+}
+.second-last:hover::before {
+    width: 100%; /* Expands fully */
+}
+
+
+
+
+
 .dd-2 a{
     color: black;
     opacity: 0.5;
@@ -121,11 +227,9 @@ flex-direction: row-reverse;
     margin: 0;
     padding-top: 10px;
     list-style: none;
-    height: 31vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    height: 26vh;
     width: 300px;
+    display: none;
 }
 .fluffy-icons-list a{
     color: black;
@@ -140,16 +244,29 @@ flex-direction: row-reverse;
     margin: 0;
     padding-top: 10px;
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     width: 300px;
+    display: none;
     
 }
 .dd-4 a{
     color: black;
-    opacity: 0.5;
-    
+    opacity: 0.5;   
+}
+
+.second-dd{
+
+}
+
+
+/*-----drop down toggle-------**/
+.first-drop-down.active{
+    display: block;
+}
+.dd-2.active{
+    display: block;
+}
+.dd-3.active{
+    display: block;
 }
 
 
@@ -175,3 +292,7 @@ flex-direction: row-reverse;
     opacity: 1;
     transition: all 0.3s ease-out;
 }
+/*-----------underline width of the parent class elecmts - .fluffy-icons-list-*/
+
+
+/*-----------finished  side nav bar -----*/
