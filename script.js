@@ -8,17 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const dropdownToggles = document.querySelectorAll('[class^="f-dd-"], [class^="second-dd"], [class^="third-dd"], [class^="fourth_dd"]');
-    const dropdowns = document.querySelectorAll('[class^="dd-"]');
+    // Select all dropdown toggles
+    const dropdownToggles = document.querySelectorAll('.f-dd-1, .second-dd, .third-dd, .fourth_dd');
+    const dropdowns = document.querySelectorAll('.first-drop-down, .dd-2, .dd-3, .dd-4');
 
+    // Add event listeners to each toggle
     dropdownToggles.forEach((toggle, index) => {
         toggle.addEventListener("click", () => {
             dropdowns.forEach((dropdown, i) => {
                 if (i !== index) {
-                    dropdown.classList.remove('active'); // Close others
+                    dropdown.classList.remove('active'); // Close other dropdowns
                 }
             });
-            dropdowns[index].classList.toggle('active'); // Toggle the clicked one
+            dropdowns[index].classList.toggle('active'); // Toggle the clicked dropdown
         });
     });
 });
