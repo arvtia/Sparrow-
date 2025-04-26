@@ -44,11 +44,14 @@ flex-direction: row-reverse;
 .fancy-icons.active{
     right: 0;
 }
+
 /*--fancy -navbar -side bar css ends here*/
 
 
 /*the side nav list items css starts here*/
-
+.fluffy-cheeks{
+    background-color: #78747442;
+}
 .fluffy-icons-list{
     width: 100%;
     overflow: scroll;
@@ -308,3 +311,42 @@ flex-direction: row-reverse;
 
 
 /*-----------finished  side nav bar -----*/
+
+@media (max-width:770px) {
+    .fluffy-cheeks{
+        width: 100%;
+    }
+    .fancy-icons.active {
+        right: 0;
+        width: 100vw;
+    }
+    .fancy-navbra .fancy-cupid{
+        background-color: transparent;
+        box-shadow: 0px 0px 0px 0px;
+    }
+    #img22,  #img24{
+        display: none;
+    }
+    .fluffy-icon3{
+        display: none;
+    }
+    .fancy-cupid img{
+        position: absolute;
+        top: 0px;
+    }
+    .fluffy-icons-list li{
+        font-size: 2rem;
+    }
+    
+}
+
+/* media screen for mobile screen 390px max */
+
+@media (max-width:390px) {
+    .fluffy-icons-list li{
+        font-size: 1.34rem;
+    }
+    .dd-3{
+        height: 229px;
+    }
+}
