@@ -280,6 +280,7 @@ flex-direction: row-reverse;
 }
 .dd-3.active{
     display: block;
+    height: 173px;
 }
 .dd-4.active{
     display: block;
@@ -346,7 +347,20 @@ flex-direction: row-reverse;
     .fluffy-icons-list li{
         font-size: 1.34rem;
     }
-    .dd-3{
-        height: 229px;
+    .dd-3.active {
+        display: block;
+        height: 246px;
+    }
+}
+
+/* for modern screen above 450px to 550px?? */
+
+@media (max-width:590px) {
+    .fluffy-icons-list li{
+        font-size: 1.34rem;
+    }
+    .dd-3.active {
+        display: block;
+        height: 246px;
     }
 }
